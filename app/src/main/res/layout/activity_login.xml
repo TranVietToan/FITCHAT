@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="32dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="32dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/expletus_sans_semibold"
+            android:text="LOGIN"
+            android:textColor="@color/item"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/expletus_sans_semibold"
+            android:text="Please sign in to continue "
+            android:textColor="@color/primary_text"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"/>
+        <EditText
+            android:id="@+id/edtEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:hint="Email"
+            android:paddingLeft="20dp"
+            android:textColor="@color/primary_text"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:textSize="14dp"
+            android:fontFamily="@font/expletus_sans_semibold"
+            android:background="@drawable/neumorphism_edit_text"
+            android:textColorHint="@color/secondary_text"
+            android:layout_marginBottom="10dp"/>
+        <EditText
+            android:id="@+id/edtPasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:hint="Password"
+            android:paddingLeft="20dp"
+            android:textSize="14dp"
+
+            android:textColor="@color/primary_text"
+            android:textStyle="bold"
+            android:fontFamily="@font/expletus_sans_semibold"
+            android:background="@drawable/neumorphism_edit_text"
+            android:textColorHint="@color/secondary_text"/>
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/expletus_sans_semibold"
+            android:background="@drawable/neumorphism_button_confirm"
+            android:text="Login"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textColor="@color/primary_text"
+            android:fontFamily="@font/expletus_sans_semibold"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/txtSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Sign up"
+            android:textColor="@color/item"
+            android:textStyle="bold"
+            android:fontFamily="@font/expletus_sans_semibold"
+            android:textSize="18dp"/>
+    </LinearLayout>
+</RelativeLayout>

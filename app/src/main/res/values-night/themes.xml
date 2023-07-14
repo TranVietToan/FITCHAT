@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FitChat" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimaryDark">@color/background</item>
+        <item name="colorAccent">@color/item</item>
+        <!-- Customize your theme here. -->
+
+        <item name="android:textColorPrimary">@color/primary_text</item>       <!--Màu chữ trong các control như Button ... -->
+        <item name="android:textColorSecondary">@color/item</item>
+    </style>
+</resources>

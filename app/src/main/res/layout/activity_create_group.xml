@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".CreateGroupActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarCreateGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Tạo nhóm chat"
+            android:background="@color/background">
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutFindUserGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <EditText
+                android:id="@+id/edtSearchUserGroup"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:hint="Search your friend"
+                android:paddingLeft="60dp"
+                android:textSize="14dp"
+                android:textColorHint="@color/secondary_text"
+                android:background="@drawable/neumorphism_edit_text"/>
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="22dp"
+                android:src="@drawable/ic_search"/>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvUserGroup"
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên nhóm chat"
+                android:fontFamily="@font/expletus_sans_semibold"
+                android:textColor="@color/primary_text"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:background="@color/background"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/edtNameGroup"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:hint="Enter name group"
+                android:paddingLeft="20dp"
+                android:textSize="14dp"
+                android:textColorHint="@color/secondary_text"
+                android:background="@drawable/neumorphism_edit_text"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gợi ý"
+            android:textSize="16dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/secondary_text" />
+        <ListView
+            android:id="@+id/lvUserSuggest"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:divider="@null"
+            android:dividerHeight="12dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnCreteGroupConfirmation"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/layoutFindUserGroup"
+        android:textStyle="bold"
+        android:fontFamily="@font/expletus_sans_semibold"
+        android:textColor="@color/white"
+        android:background="@drawable/neumorphism_button_confirm"
+        android:text="xác nhận tạo nhóm"/>
+</RelativeLayout>

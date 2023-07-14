@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "73975408859",
+    "firebase_url": "https://fitchat-47459-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fitchat-47459",
+    "storage_bucket": "fitchat-47459.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:73975408859:android:b0902c10e2805ad47f84fe",
+        "android_client_info": {
+          "package_name": "vn.tika.fitchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "73975408859-gvpunelu08i1n2vr1ohjhnfd7mu6o5nu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB11JOKzm_X3tYXtfi7rsjmbkrev-Z9coY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "73975408859-gvpunelu08i1n2vr1ohjhnfd7mu6o5nu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

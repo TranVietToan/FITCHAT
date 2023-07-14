@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ChatGroupActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarGroupChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civGroupChatAvatar"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/img_avatar_default"/>
+            <TextView
+                android:id="@+id/txtGroupChatName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chấn bé đù"
+                android:textSize="22dp"
+                android:textColor="@color/primary_text"
+                android:fontFamily="@font/expletus_sans_semibold"
+                android:layout_marginLeft="25dp"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChat_GroupChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutBottom"
+        android:layout_below="@+id/app_bar_layout">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/imvApp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_apps" />
+
+        <EditText
+            android:id="@+id/edtContentMessage_GroupChat"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/imgSend_GroupChat"
+            android:layout_toRightOf="@+id/imvApp"
+            android:background="@drawable/neumorphism_edit_text"
+            android:hint="Write here"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/secondary_text"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/imgSend_GroupChat"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_paper_plane_top" />
+    </RelativeLayout>
+</RelativeLayout>
