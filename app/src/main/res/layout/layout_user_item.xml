@@ -59,8 +59,10 @@
             </LinearLayout>
             
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/txtLastMsg"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
+                android:maxLines="1"
                 android:text="Ta đã mặc kệ hết thế giới để yêu nhau "
                 android:textColor="@color/secondary_text"
                 android:textSize="12dp"/>
